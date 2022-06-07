@@ -8,7 +8,7 @@ public class ThrowExceptionTestOne {
     }
 
     static int divide(int numberToDivide, int numberToDivideBy) {
-        if (numberToDivideBy == 0) {
+        if (numberToDivideBy == 0 || numberToDivideBy == 1) {
             throw new BadNumberException();
             /*RuntimeException runtimeException = new RuntimeException("Cannot divide by 0");
             throw runtimeException;*/

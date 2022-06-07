@@ -1,6 +1,6 @@
 package com.exceptionHandlingTutorial;
 
-public class ExceptionTutorial {
+public class ExceptionTutorialTestTwo {
     public static void main(String[] args) {
         A();
     }
@@ -15,7 +15,6 @@ public class ExceptionTutorial {
     }
 
     static void C() {
-        throw new RuntimeException();
     }
 
     static void D() {

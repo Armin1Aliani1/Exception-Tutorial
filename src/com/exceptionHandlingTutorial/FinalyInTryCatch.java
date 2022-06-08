@@ -35,7 +35,7 @@ public class FinalyInTryCatch {
                     System.out.println("4st case");
                     throw new Exception("4!");
             }
-        } catch (RuntimeException e) {
+        } catch (Exception e) {
             System.out.println("Catch block");
             System.out.println(e.getMessage());
         } finally {

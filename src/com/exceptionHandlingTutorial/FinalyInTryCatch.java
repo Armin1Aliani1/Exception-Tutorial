@@ -39,6 +39,7 @@ public class FinalyInTryCatch {
             System.out.println("Catch block");
             System.out.println(e.getMessage());
         } finally {
+            // Finally run in any case
             System.out.println("finally block");
         }
     }

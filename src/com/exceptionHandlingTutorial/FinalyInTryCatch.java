@@ -37,10 +37,18 @@ public class FinalyInTryCatch {
             }
         } catch (RuntimeException e) {
             System.out.println("Catch block");
+//            a();
             System.out.println(e.getMessage());
         } finally {
             // Finally run in any case
             System.out.println("finally block");
+            a();
+            System.out.println("End finally block");
         }
     }
+
+    private static void a() {
+        throw new RuntimeException();
+    }
+
 }

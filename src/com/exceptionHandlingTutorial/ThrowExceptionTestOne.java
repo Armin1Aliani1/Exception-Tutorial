@@ -3,12 +3,19 @@ package com.exceptionHandlingTutorial;
 public class ThrowExceptionTestOne {
     public static void main(String[] args) {
         // Exception is class parent all exceptions
+        // try and catch use for exception handling
         try {
             System.out.println(divide(5, 0));
         } catch (BadNumberException e) {
             System.out.println(e.getMessage());
         }
         System.out.println("end");
+    }
+
+    // throws BadNumberException : An exception BadNumberException may occur, but I do not know how to handle this exception
+    public static void callDivide() throws BadNumberException {
+        int result = divide(2, 1);
+        System.out.println(result);
     }
 
     static int divide(int numberToDivide, int numberToDivideBy) {

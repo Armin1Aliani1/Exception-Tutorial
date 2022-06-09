@@ -6,13 +6,13 @@ public class MultipleCatchOne {
     public static void main(String[] args) {
         try {
             a();
-        } catch (GrandSonException e) {
+        } catch (GrandSonExceptionOneOne e) {
             System.out.println("GrandSonE");
-        } catch (BrotherException e) {
+        } catch (BrotherExceptionOne e) {
             System.out.println("BrotherE");
-        } catch (ChildException e) {
+        } catch (ChildExceptionOne e) {
             System.out.println("ChildE");
-        } catch (ParentException e) {
+        } catch (ParentExceptionOne e) {
             System.out.println("ParentE");
         } catch (SQLException e) {
             System.out.println("Sql");
@@ -21,19 +21,19 @@ public class MultipleCatchOne {
         }
     }
 
-    static void a() throws ParentException, ChildException, BrotherException, GrandSonException, SQLException, Exception {
-        throw new BrotherException();
+    static void a() throws ParentExceptionOne, ChildExceptionOne, BrotherExceptionOne, GrandSonExceptionOneOne, SQLException, Exception {
+        throw new BrotherExceptionOne();
     }
 }
 
-class ParentException extends Exception {
+class ParentExceptionOne extends Exception {
 }
 
-class ChildException extends ParentException {
+class ChildExceptionOne extends ParentExceptionOne {
 }
 
-class BrotherException extends ParentException {
+class BrotherExceptionOne extends ParentExceptionOne {
 }
 
-class GrandSonException extends ChildException {
+class GrandSonExceptionOneOne extends ChildExceptionOne {
 }

@@ -7,7 +7,8 @@ public class CheckedAndUnchecked {
     }
 
     static void throwMyRuntimeException() throws MyRuntimeException {
-        throw new MyRuntimeException();
+        throw new IllegalAccessError();
+//        throw new MyRuntimeException();
     }
 
     static void throwMyException() throws MyException {

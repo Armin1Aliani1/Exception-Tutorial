@@ -2,7 +2,7 @@ package com.exceptionHandlingTutorial;
 
 import java.util.Scanner;
 
-public class FinalyInTryCatch {
+public class FinallyInTryCatch {
     public static void main(String[] args) throws Exception {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter a number between 1 and 4 :");
